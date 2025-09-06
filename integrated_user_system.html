@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrated User Management System</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS for styling -->
+</head>
+<body>
+    <h1>Integrated User Management System</h1>
+
+    <section id="registration">
+        <h2>Register</h2>
+        <form action="register.php" method="POST"> <!-- PHP backend for registration -->
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <section id="login">
+        <h2>Login</h2>
+        <form action="login.php" method="POST"> <!-- PHP backend for login -->
+            <label for="login-username">Username:</label>
+            <input type="text" id="login-username" name="username" required>
+            <br>
+            <label for="login-password">Password:</label>
+            <input type="password" id="login-password" name="password" required>
+            <br>
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <section id="user-management">
+        <h2>User Management</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- PHP code to fetch and display users will go here -->
+            </tbody>
+        </table>
+    </section>
+
+    <script src="script.js"></script> <!-- Link to JS for interactivity -->
+</body>
+</html>
